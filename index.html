@@ -62,24 +62,15 @@
       </div>
     </nav>
     <div class="container my-4">
-      <div class="row justify-content-end">
-        <div class="col-md-6 col-lg-4">
-          <div class="card shadow">
-            <div class="card-header bg-primary text-white">Crypto Prices</div>
-            <div class="card-body">
-              <ul id="crypto-list" class="list-group"></ul>
-              <small class="text-muted d-block mt-2" id="updated-at"
-                >Updating…</small
-              >
-            </div>
-          </div>
+      <div class="row align-items-start">
+        <div class="col-md-6 text-center">
+          <h4>Astronomy Picture of the Day</h4>
+          <img id="apod-img" class="img-fluid rounded shadow" alt="NASA APOD" />
+          <p id="apod-title" class="mt-2"></p>
         </div>
-      </div>
-    </div>
-    <div class="container my-4">
-      <div class="row justify-content-end">
-        <div class="col-md-4">
-          <div class="card text-end shadow">
+
+        <div class="col-md-6">
+          <div class="card text-end shadow mb-4">
             <div class="card-header bg-primary text-white">Weather Update</div>
             <div class="card-body">
               <a
@@ -90,22 +81,23 @@
                 data-theme="pure"
                 >TRINIDAD WEATHER</a
               >
-              <script>
-                !(function (d, s, id) {
-                  var js,
-                    fjs = d.getElementsByTagName(s)[0];
-                  if (!d.getElementById(id)) {
-                    js = d.createElement(s);
-                    js.id = id;
-                    js.src = "https://weatherwidget.io/js/widget.min.js";
-                    fjs.parentNode.insertBefore(js, fjs);
-                  }
-                })(document, "script", "weatherwidget-io-js");
-              </script>
+              <script src="weather_widget.js"></script>
+            </div>
+          </div>
+
+          <div class="card shadow">
+            <div class="card-header bg-primary text-white">Crypto Prices</div>
+            <div class="card-body">
+              <ul id="crypto-list" class="list-group"></ul>
+              <small class="text-muted d-block mt-2" id="updated-at"
+                >Updating…</small
+              >
+              <script src="apod-pic.js"></script>
             </div>
           </div>
         </div>
       </div>
     </div>
   </body>
+  hello there!
 </html>
