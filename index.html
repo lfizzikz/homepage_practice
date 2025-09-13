@@ -43,21 +43,53 @@
         <div class="collapse navbar-collapse" id="mainNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" href="#home">Home</a>
+              <a class="nav-link active" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#hobbies">Hobbies</a>
+              <a class="nav-link" href="hobbies.html">Hobbies</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#projects">Projects</a>
+              <a class="nav-link" href="projects.html">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#expertise">Professional Experience</a>
+              <a class="nav-link" href="experience.html"
+                >Professional Experience</a
+              >
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    hello, homepage
+    <div class="container my-4">
+      <div class="row justify-content-end">
+        <div class="col-md-4">
+          <div class="card text-end shadow">
+            <div class="card-header bg-primary text-white">Weather Update</div>
+            <div class="card-body">
+              <a
+                class="weatherwidget-io"
+                href="https://forecast7.com/en/10d69n61d22/trinidad-and-tobago/"
+                data-label_1="TRINIDAD"
+                data-label_2="WEATHER"
+                data-theme="pure"
+                >TRINIDAD WEATHER</a
+              >
+              <script>
+                !(function (d, s, id) {
+                  var js,
+                    fjs = d.getElementsByTagName(s)[0];
+                  if (!d.getElementById(id)) {
+                    js = d.createElement(s);
+                    js.id = id;
+                    js.src = "https://weatherwidget.io/js/widget.min.js";
+                    fjs.parentNode.insertBefore(js, fjs);
+                  }
+                })(document, "script", "weatherwidget-io-js");
+              </script>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
