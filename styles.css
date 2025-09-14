@@ -1,0 +1,38 @@
+.indBody {
+  background-color: #f5f5f5;
+}
+/* background: linear-gradient(to right, #e0f7fa, #ffffff); */
+.head {
+  background: linear-gradient(to right, #e0f7fa, #ffffff);
+}
+.custom-header {
+  background: linear-gradient(
+    to right,
+    #1e3c72,
+    #2a5298
+  ); /* Dark blue gradient */
+  padding: 0.75rem 1rem;
+}
+
+.custom-header .navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.custom-header .nav-link {
+  color: white;
+  transition: color 0.2s ease-in-out;
+}
+
+.custom-header .nav-link:hover {
+  color: #ffd700; /* Gold on hover */
+}
+
+.navbar-toggler {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.2
+  ); /* Makes the mobile toggle visible */
+}
